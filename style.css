@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+
+}
+h2 {
+  font-size: 1.5rem;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #33ccff, #4dd2ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0px;
+}
+
+.glass {
+  background: white;
+  min-height: 70vh;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+}
+
+.sintomas-container {
+  width: 98%;
+  min-height: 660px;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.sintomas-container h2 {
+  align-self: center;
+  justify-self: center;
+}
+
+.sintomas-container .sintomas-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.sintomas-container .sintomas-content .wrapper {
+  width: 100%;
+  margin: 1rem 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.sintomas {
+  /* max-width: 230px; */
+  width: 180px;
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  margin: 1rem;
+
+  border: 3px solid #00bfff;
+  
+  border-radius: 8px;
+  color: #426696;
+  background:rgba(255, 255, 255, 0.3);
+
+  font-size: 0.9rem;
+
+}
+
+.sintomas span {
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+
+.sintomas:hover {
+  cursor: pointer;
+  border: 3px solid #00ace6;
+}
+
+.grave:hover{
+  border: 3px solid #c93030;
+}
+.medio:hover{
+  border: 3px solid burlywood;
+  
+}
+.leve:hover{
+  border: 3px solid #00ace6;
+}
+
+.diagnostico {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 20%;
+  bottom: -300px;
+
+
+  max-width: 300px;
+  max-height: 200px;
+
+  border-radius: 16px;
+
+
+}
+
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
