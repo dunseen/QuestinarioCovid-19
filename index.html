@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diagnóstico COVID-19</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    
-  </head>
-  <body>
-<script type="text/javascript" src="script.js"></script>
-    <main>
-      <section  class="glass">
-      <h1>Diagnóstico clínico de Covid-19 </h1>
-      <div class="sintomas-container">
-        <h2>Sintomas</h2>
 
-        <div class="sintomas-content">
-          <h3>Comuns</h3>
-            <div class="wrapper">
-                <div id="perda-o-p" class="sintomas grave">
-                  Perda de olfato ou paladar
-                </div> 
-                <div id="contato-dom-inf" class="sintomas medio">
-                  Contato domiciliar com infectado
-                </div> 
-                <div id="saturacao-ox" class="sintomas medio">
-                  Saturação de Oxigênio abaixo de 92%
-                </div> 
-                <div id="alteracao-p-o" class="sintomas medio">
-                  Alteração de paladar ou olfato
-                </div> 
-                <div id="contato-colega" class="sintomas leve">
-                Contato com colega de trabalho confirmado
-                </div> 
-            </div>
-          </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Diagnóstico COVID-19</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
-          <div class="sintomas-content">
-          <h3>Gerais</h3>
-            <div class="wrapper">
-                <div id="sensacao-febril" class="sintomas leve">
-                  Sensação febril
-                </div> 
-                <div id="fraqueza" class="sintomas leve">
-                  Fraqueza
-                </div> 
-                <div id="falta-de-ar" class="sintomas leve">
-                  Falta de Ar
-                </div> 
-                <div id="fadiga" class="sintomas leve">
-                  Fadiga
-                </div> 
-                <div id="hiporexia" class="sintomas leve">
-                  Hiporexia
-                </div> 
-                <div id="tonturas" class="sintomas leve">
-                  Tonturas
-                </div> 
-            </div>
-          </div>
 
-          <div class="sintomas-content">
-          <h3>Tipo IVAS</h3>
-            <div class="wrapper">
-                <div id="tosse-seca" class="sintomas leve">
-                  Tosse Seca <span>( pode ser leve )</span>
+</head>
+
+<body>
+<script type="text/javascript" src="script.js">
+
+	</script>
+	<main>
+		<section class="glass">
+			<h1>Diagnóstico clínico de Covid-19 </h1>
+			<div class="sintomas-container">
+				<h2>Sintomas</h2>
+
+				<div class="sintomas-content">
+					<h3>Comuns</h3>
+					<div class="wrapper">
+						<div id="perda-o-p" class="sintomas grave">
+							Perda de olfato ou paladar
+						</div>
+						<div id="contato-dom-inf" class="sintomas medio">
+							Contato domiciliar com infectado
+						</div>
+						<div id="saturacao-ox" class="sintomas medio">
+							Saturação de Oxigênio abaixo de 92%
+						</div>
+						<div id="alteracao-p-o" class="sintomas medio">
+							Alteração de paladar ou olfato
+						</div>
+						<div id="contato-colega" class="sintomas leve">
+							Contato com colega de trabalho confirmado
+						</div>
+					</div>
+				</div>
+
+				<div class="sintomas-content">
+					<h3>Gerais</h3>
+					<div class="wrapper">
+						<div id="sensacao-febril" class="sintomas leve">
+							Sensação febril
+						</div>
+						<div id="fraqueza" class="sintomas leve">
+							Fraqueza
+						</div>
+						<div id="falta-de-ar" class="sintomas leve">
+							Falta de Ar
+						</div>
+						<div id="fadiga" class="sintomas leve">
+							Fadiga
+						</div>
+						<div id="hiporexia" class="sintomas leve">
+							Hiporexia
+						</div>
+						<div id="tonturas" class="sintomas leve">
+							Tonturas
+						</div>
+					</div>
+				</div>
+
+				<div class="sintomas-content">
+					<h3>Tipo IVAS</h3>
+					<div class="wrapper">
+						<div id="tosse-seca" class="sintomas leve">
+							Tosse Seca <span>( pode ser leve )</span>
                 </div> 
                 <div id="faringite" class="sintomas leve">
                   Fraqueza <span > ( pode ser leve )</span>
@@ -134,15 +137,34 @@
                 
             </div>
           </div>
+          <div class="finalizar-container">
+            <button type="button" id="finalizar">Finalizar</button>
+          </div>
 
         </div>
-        <div class="diagnostico">
-          <h1>Covid-19</h1>
-          <p>Procure um médico imediatamente</p>
-          <button>Reiniciar</button>
-        </div>
+        
+      
       
       </section>
+      <div id="diagnostico-modal" class="diagnostico">
+          <div class="diagnostico-content">
+            <div class="diagnostico-header">
+                <i id="icon" ></i>
+            </div>
+            <div class="diagnostico-body">
+              <h2 id="diagnostico-titulo"></h2>
+              <p id="diagnostico-paragrafo"></p>
+              <p id="diagnostico-paragrafo2"></p>
+              <p id="diagnostico-paragrafo3"></p>
+            </div>
+            <div class="diagnostico-footer">
+              <button id="reiniciar">Reiniciar</button>
+            </div>
+        </div>
+      </div>
+
+
+          
     </main>
     <div class="circle1"></div>
     <div class="circle2"></div>
