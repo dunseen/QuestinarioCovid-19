@@ -57,9 +57,10 @@ window.addEventListener("load", function(event) {
     adicionandoPesoDoElemento(classeAtual,idAtual);
 
     //Passando o ID do elemento clicado atualmente para a função.    
+    alteraCorDeFundoETexto(classeAtual,idAtual)
+
     adicionaOuRetiraIncremento(idAtual);
 
-    alteraCorDeFundoETexto(classeAtual,idAtual)
 
     //Função que realiza o diagnóstico.
     
@@ -81,6 +82,7 @@ window.addEventListener("load", function(event) {
 
   const alteraCorDeFundoETexto = (classeAtual,idAtual) => {
     let elementoAtual = document.getElementById(idAtual);
+   
     elementoAtual.style.color = '#fff';
 
     if(classeAtual === 'grave'){
@@ -93,11 +95,14 @@ window.addEventListener("load", function(event) {
   }
 
   const adicionaOuRetiraIncremento = (idAtual) => {
-
     if(idAnterior !== idAtual){
       limite = limite + peso;
       idAnterior = idAtual;
+
     }else {
+      let elementoAtual = document.getElementById(idAnterior);
+      elementoAtual.style.background =  'rgba(255, 255, 255, 0.3)';
+      elementoAtual.style.color = '#426696';
       limite = limite - peso;
       idAnterior = '';
     }
